@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational website</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link rel="stylesheet"href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <img src="images/imagess.png" alt="">
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fas fa-times"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="blog.html">Blog</a></li>  
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <img id="menu-btn" src="images/m.png" alt="">
+        </div>
+    </nav>  
+
+
+    <section id="about-home">
+        <h2>Blog</h2>
+    </section> 
+    <section id="blog-container">
+        <div class="blogs">
+            <div class="post">
+                <img src="images/b1.jpg" alt="">
+                <h3>Learn web development in easiest ways</h3>
+                <p>Embark on a seamless journey to master web development through the easiest ways available. 
+                   Dive into the realm of coding with simplicity as your guide, unraveling the complexities of
+                   web development effortlessly. </p>
+                <a href="post.html">Read More</a> 
+            </div>
+            <div class="post">
+                <img src="images/b2.jpg" alt="">
+                <h3>Get user friendly solutions on Web Design</h3>
+                <p>Embark on a user-friendly journey to master web design effortlessly. Start by grasping the basics of layout, color 
+                    theory, and typography. Dive into design tools like Adobe XD or Figma, ensuring hands-on practice in our crafting 
+                    visually appealing website. </p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="post">
+                <img src="images/b3.jpg" alt="">
+                <h3>Hassle-free methods to know about App Development</h3>
+                <p>Discover the world of app development through hassle-free methods that simplify your learning journey. 
+                    Begin by understanding the basics, unraveling the core concepts of coding and app architecture.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="post">
+                <img src="images/b4.jpg" alt="">
+                <h3>Straightforward pathways to learn Python Programming</h3>
+                <p>Unlock Python proficiency effortlessly with our curated selection of resources.
+                     Dive into interactive courses on platforms like Codecademy and Coursera. Accelerate your 
+                     learning with acclaimed books such as "Python Crash Course." </p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+
+        <div class="cate">
+            <h2>Categories</h2>
+            <hr>
+            <a href="#">Web Development</a>
+            <hr>
+            <a href="#">Web Design</a>
+            <hr>
+            <a href="#">App Development</a>
+            <hr>
+            <a href="#">Frontend Web Development</a>
+            <hr>
+            <a href="#">Python Programming</a>
+            <hr>
+            <a href="#">Javascript Hack</a>
+            <hr>
+        </div>
+    </section>
+
+    <footer>
+       <div class="footer-col">
+        <h3>Top Products</h3>
+        <li>Manage Reputation</li>
+        <li>Power Tools</li>
+        <li>Managed Website</li>
+        <li>Marketing Services</li>
+       </div> 
+       <div class="footer-col">
+        <h3>Quick Links</h3>
+        <LI>Jobs</LI>
+        <li>Brand Assets</li>
+        <li>Invester Relations</li>
+        <li>Term of service</li>
+       </div> 
+       <div class="footer-col">
+        <h3>features</h3>
+        <li>Manage Reputation</li>
+        <li>Power Tools</li>
+        <li>Managed Website</li>
+        <li>Marketing Services</li>
+       </div> 
+       <div class="footer-col">
+        <h3>Resourses</h3>
+        <li>Guides</li>
+        <li>Research</li>
+        <li>Experts</li>
+        <li>Marketing Service</li>
+       </div> 
+       <div class="footer-col">
+        <h3>Newsletter</h3>
+        <p>You can trust us,We only send promo offers</p>
+        <div class="subscribe">
+            <input type="text" placeholder="Your Email Address">
+            <a href="#" class="yellow">SUBSCRIBE</a>
+        </div>
+       </div>
+       <div class="copyright">
+        <p>Copyright 02021 All rights reserved | This template is made by Arushi</p>
+        <div class="pro-links">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+
+        </div>
+       </div>
+    </footer>
+    <script>
+        $('#menu-btn').click(function(){
+            $('nav .navigation ul').addClass('active') 
+        });
+        $('#menu-close').click(function(){
+            $('nav .navigation ul').removeClass('active')
+        });
+    </script>
+</body>
+</html>

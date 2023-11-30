@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational website</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link rel="stylesheet"href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <img src="images/imagess.png" alt="">
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fas fa-times"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="blog.html">Blog</a></li>  
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <img id="menu-btn" src="images/m.png" alt="">
+        </div>
+    </nav>  
+    <section id="blog-container">
+        <div class="blogs blogpost">
+            <div class="post">
+                <img src="images/b1.jpg" alt="">
+                <h3>Learn web development in the easiest way</h3>
+                <p>Learning web development can be a rewarding journey, and breaking it
+                    down into manageable steps can make the process easier. Start with 
+                    the fundamentals of HTML and CSS, the building blocks of web pages.
+                    Numerous online platforms offer interactive courses, such as Codecademy
+                    or freeCodeCamp, allowing hands-on practice as you learn.
+
+                    <br><br>Once you grasp the basics, delve into JavaScript for dynamic 
+                    functionality. Platforms like Mozilla Developer Network (MDN) provide 
+                    comprehensive guides and documentation. Practice by building small projects
+                    to reinforce your understanding. Understanding version control with Git is crucial; 
+                    use platforms like GitHub for collaborative coding and portfolio showcasing.
+                    Explore responsive design and learn a CSS framework like Bootstrap to streamline
+                     styling. Familiarize yourself with a server-side language, such as Node.js 
+                     or Python with Django, and understand how databases work. Platforms like W3Schools 
+                    or MDN can aid in learning these backend aspects.
+                    <br><br>To enhance your skills, engage in real-world projects. Join coding 
+                    communities like Stack Overflow or Reddit to seek guidance and share experiences.
+                    Attend web development meetups or conferences to network and stay updated on industry trends.
+                    Continuous learning is key, as web development technologies evolve. Follow
+                    blogs, podcasts, and online courses to stay informed. Lastly, practice regularly,
+                    contribute to open-source projects, and build a strong portfolio. Learning web 
+                    development is an ongoing process, so embrace challenges and celebrate your 
+                    progress along the way.Beyond the foundational aspects, it's beneficial to 
+                    explore frameworks and libraries that streamline development. For front-end,
+                    delve into popular frameworks like React, Angular, or Vue.js, each offering 
+                    unique advantages. These frameworks facilitate the creation of interactive 
+                    and dynamic user interfaces.On the back end, consider frameworks such as 
+                    Express.js for Node.js, Django for Python, or Ruby on Rails. These frameworks 
+                    provide structure and efficiency when building server-side applications. 
+                    Familiarize yourself with RESTful APIs and explore how data is exchanged 
+                    between the front end and back end.
+                    <br><br>Understanding databases is crucial; learn SQL for relational
+                    databases like MySQL or PostgreSQL, and explore NoSQL databases like 
+                    MongoDB for a different approach to data storage. Integration of databases 
+                    with server-side applications is a fundamental skill.
+                    Version control becomes more nuanced as projects grow. Learn advanced Git
+                    commands and workflows to manage collaborative development effectively. 
+                    Continuous integration and deployment (CI/CD) practices ensure smooth 
+                    project updates; platforms like Jenkins or GitHub Actions can aid in 
+                    automating these processes.Stay attuned to industry trends such as 
+                    Progressive Web Apps (PWAs), serverless architecture, and the adoption 
+                    of microservices. These trends can influence the design and functionality 
+                    of modern web applications.
+                    <br><br>Lastly, consider exploring cloud platforms like AWS, Azure, 
+                    or Google Cloud to deploy and scale your applications. These platforms 
+                    offer a range of services that can enhance the performance and reliability 
+                    of your web projects. In essence, mastering web development involves a 
+                    combination of learning foundational technologies, exploring frameworks, 
+                    understanding databases, refining collaboration skills, and staying informed 
+                    about industry advancements. The iterative process of building, learning, and 
+                    adapting is key to becoming a proficient web developer.
+                </p>
+                <a href="#">Read Next</a>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+       <div class="footer-col">
+        <h3>Top Products</h3>
+        <li>Manage Reputation</li>
+        <li>Power Tools</li>
+        <li>Managed Website</li>
+        <li>Marketing Services</li>
+       </div> 
+       <div class="footer-col">
+        <h3>Quick Links</h3>
+        <LI>Jobs</LI>
+        <li>Brand Assets</li>
+        <li>Invester Relations</li>
+        <li>Term of service</li>
+       </div> 
+       <div class="footer-col">
+        <h3>Features</h3>
+        <li>Manage Reputation</li>
+        <li>Power Tools</li>
+        <li>Managed Website</li>
+        <li>Marketing Services</li>
+       </div> 
+       <div class="footer-col">
+        <h3>Resourses</h3>
+        <li>Guides</li>
+        <li>Research</li>
+        <li>Experts</li>
+        <li>Marketing Service</li>
+       </div> 
+       <div class="footer-col">
+        <h3>Newsletter</h3>
+        <p>You can trust us,We only send promo offers</p>
+        <div class="subscribe">
+            <input type="text" placeholder="Your Email Address">
+            <a href="#" class="yellow">SUBSCRIBE</a>
+        </div>
+       </div>
+       <div class="copyright">
+        <p>Copyright 02021 All rights reserved | This template is made by Arushi</p>
+        <div class="pro-links">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+
+        </div>
+       </div>
+    </footer>
+    <script>
+        $('#menu-btn').click(function(){
+            $('nav .navigation ul').addClass('active') 
+        });
+        $('#menu-close').click(function(){
+            $('nav .navigation ul').removeClass('active')
+        });
+    </script>
+</body>
+</html>

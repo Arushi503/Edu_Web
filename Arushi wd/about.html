@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational website</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link rel="stylesheet"href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <img src="images/imagess.png" alt="">
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fas fa-times"></i>
+                <li><a href="#">Home</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>  
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <img id="menu-btn" src="images/m.png" alt="">
+        </div>
+    </nav>  
+
+
+    <section id="about-home">
+        <h2>About Hatton</h2>
+    </section> 
+
+    <section id="about-container">
+        <div class="about-img">
+            <img src="images/f2.jpg" alt="">
+
+        </div>
+        <div class="about-text">
+            <h2>Welcome to Hatton,Enhance your skills with best online courses</h2>
+            <p>you can start and finish one of these popular course in undeer a day -for 
+                free! check out the list below..take the courses for free</p>
+                <div class="about-fe">
+                    <img src="images/l1.jpg" alt="">
+                    <div class="fe-text">
+                        <h5>400+ courses</h5>
+                        <p>You can start and finish one of these popular course in under our site</p>
+                    </div>
+                </div>
+                <div class="about-fe">
+                    <img src="images/l2.webp" alt="">
+                    <div class="fe-text">
+                        <h5>Lifetime Access</h5>
+                        <p>You can access our courses anytime you need as per your choice during your lifetime</p>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+
+    <section id="features">
+        <h1>Awesome Features</h1>
+        <p>Discover the awesome features that make learning on our platform engaging, interactive, and tailored to your educational journey</p>
+        <div class="fea-base">
+            <div class="fea-box">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Scholarship Facility</h3>
+                <p>Scholarship is financial aid provided to a student on a certain basis, usually primarily academic merit.</p>
+            </div>
+            <div class="fea-box">
+                <i class="fas fa-certificate"></i>
+                <h3>Elective Courses</h3>
+                <p>Electives let a student check out what they’re interested in and can cover things like art, music, drama, tech, and personal education.</p>
+            </div>
+            <div class="fea-box">
+                <i class="fas fa-award"></i>
+                <h3>Global certification</h3>
+                <p>A certificate that recognizes your accomplishments in internationalization at home and abroad.</p>
+            </div>
+        </div>
+    </section> 
+
+    <section id="trust">
+        <h1>Trusted By</h1>
+        <p>Empowering minds through trusted education for a brighter future</p>
+        <div class="trust-img">
+            <img src="images/e2.png" alt="">
+            <img src="images/e1.jpg" alt="">
+            <img src="images/e3.jpeg" alt="">
+            <img src="images/e4.jpeg" alt="">
+            <img src="images/e5.jpeg" alt="">
+            <img src="images/e6.png" alt="">
+        </div>
+    </section>
+
+
+    <footer>
+       <div class="footer-col">
+        <h3>Top Products</h3>
+        <li>Manage Reputation</li>
+        <li>Power Tools</li>
+        <li>Managed Website</li>
+        <li>Marketing Services</li>
+       </div> 
+       <div class="footer-col">
+        <h3>Quick links</h3>
+        <LI>Jobs</LI>
+        <li>Brand Assets</li>
+        <li>Invester Relations</li>
+        <li>Term of service</li>
+       </div> 
+       <div class="footer-col">
+        <h3>Features</h3>
+        <li>Manage Reputation</li>
+        <li>Power Tools</li>
+        <li>Managed Website</li>
+        <li>Marketing Services</li>
+       </div> 
+       <div class="footer-col">
+        <h3>Resourses</h3>
+        <li>Guides</li>
+        <li>Research</li>
+        <li>Experts</li>
+        <li>Marketing Service</li>
+       </div> 
+       <div class="footer-col">
+        <h3>Newsletter</h3>
+        <p>You can trust us,We only send promo offers</p>
+        <div class="subscribe">
+            <input type="text" placeholder="Your Email Address">
+            <a href="#" class="yellow">SUBSCRIBE</a>
+        </div>
+       </div>
+       <div class="copyright">
+        <p>Copyright 02021 All rights reserved | this template is made by Arushi</p>
+        <div class="pro-links">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+
+        </div>
+       </div>
+    </footer>
+    <script>
+        $('#menu-btn').click(function(){
+            $('nav .navigation ul').addClass('active') 
+        });
+        $('#menu-close').click(function(){
+            $('nav .navigation ul').removeClass('active')
+        });
+    </script>
+</body>
+</html>
